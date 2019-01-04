@@ -2,9 +2,9 @@
 title: 'Python代写: CS521_Project Part1'
 date: 2019-01-04 16:48:29
 tags: 
-- Python
+    - Python
 categories:
-- Python代写
+    - Python代写
 ---
 
 ### Purpose
