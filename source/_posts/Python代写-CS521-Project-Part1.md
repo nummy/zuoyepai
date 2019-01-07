@@ -83,3 +83,7 @@ a.  load the CSV (e.g.  BaseballCSVReader('path to my CSV').load())
 b.  Print each record to the console. You are to use: print(record)
 
 
+```python
+def func():
+    pass
+```
