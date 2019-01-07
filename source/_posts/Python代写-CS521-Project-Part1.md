@@ -1,6 +1,6 @@
 ---
 title: 'Python代写: CS521_Project Part1'
-date: 2019-01-04 16:48:29
+date: 2019-01-02 16:48:29
 tags: 
     - Python
 categories:
@@ -81,3 +81,5 @@ e.  StocksCSVReader should have two calculations using the extracted records:
 6.  From your main section ( https://docs.python.org/3/library/__main__.html )
 a.  load the CSV (e.g.  BaseballCSVReader('path to my CSV').load())
 b.  Print each record to the console. You are to use: print(record)
+
+
