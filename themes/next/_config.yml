@@ -35,7 +35,7 @@ favicon:
   #ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: "Java, Python, C++, C, R, Calculus, Stat, WebAssign, Probability, Matlab, 代写, 代做"
+keywords: calculus, math,linear algebra, probability, stat, C++,C,java, python, r, js, javascript, database, shell, 代写，代做，作业，编程，homework, assignment, project, lab, 留学生，英国，美国，北美，加拿大，美国，澳洲，程序, 代码, 数学, 微积分, 概率论, 网课, 线代, 线性代数, 统计学
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -54,7 +54,7 @@ footer:
   copyright:
   # -------------------------------------------------------------
   # Hexo link (Powered by Hexo).
-  powered: true
+  powered: false
 
   theme:
     # Theme & scheme info link (Theme - NexT.scheme).
@@ -126,9 +126,9 @@ scheme: Gemini
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
-#social:
+social:
   #GitHub: https://github.com/yourname || github
-  #E-Mail: mailto:yourname@gmail.com || envelope
+  邮箱: mailto:1591780418@qq.com || envelope
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
@@ -154,7 +154,7 @@ links_layout: block
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-#avatar: /images/avatar.gif
+avatar: /uploads/avatar.png
 
 # Table Of Contents in the Sidebar
 toc:
