@@ -572,7 +572,7 @@ busuanzi_count:
 
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
-baidu_push: false
+baidu_push: true
 
 # Google Calendar
 # Share your recent schedule to others via calendar page
@@ -813,3 +813,4 @@ images: images
 version: 5.1.4
 
 baidu_site_verification: alqQRnmG9u
+google_site_verification: j0jSqZ257j5XNV4PVBNr2-3RGy0aTz9McxY3cDuUHCA
