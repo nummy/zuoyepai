@@ -1,10 +1,11 @@
 ---
 title: 'Python代写: CS521_Project Part1'
-date: 2019-01-02 16:48:29
-tags: 
-    - Python
+tags:
+  - Python
 categories:
-    - Python代写
+  - Python代写
+abbrlink: '6035e09'
+date: 2019-01-02 16:48:29
 ---
 
 ### Purpose

@@ -1,13 +1,14 @@
 ---
 title: 'Python代写: CSE 231 Introduction to Programming I'
-date: 2019-01-10 15:52:30
 tags:
-- Python代写
-- Python
-- Python网课
-- 网课代修
+  - Python代写
+  - Python
+  - Python网课
+  - 网课代修
 categories:
-- Python代写
+  - Python代写
+abbrlink: 8dc54d72
+date: 2019-01-10 15:52:30
 ---
 
 Python网课代修，Python入门课

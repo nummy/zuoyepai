@@ -1,13 +1,14 @@
 ---
 title: '统计代写:Assignment1T42017'
-date: 2017-10-22 20:11:02
-tags: 
-- 统计代写
-- stat
-- stat代写
-- 统计
+tags:
+  - 统计代写
+  - stat
+  - stat代写
+  - 统计
 categories:
-- 统计代写
+  - 统计代写
+abbrlink: 41799a9d
+date: 2017-10-22 20:11:02
 ---
 
 ### Section A                                                
