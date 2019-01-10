@@ -98,7 +98,7 @@ menu:
   categories: /categories/ || th
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
-  #sitemap: /sitemap.xml || sitemap
+  sitemap: /sitemap.xml || sitemap
   # commonweal: /404/ || heartbeat
 
 # Enable/Disable menu icons.
@@ -811,3 +811,5 @@ images: images
 
 # Theme version
 version: 5.1.4
+
+baidu_site_verification: alqQRnmG9u
