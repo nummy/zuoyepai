@@ -94,18 +94,8 @@
 
           {% if theme.social %}
             <div class="links-of-author motion-element">
-                {% for name, link in theme.social %}
-                  <span class="links-of-author-item">
-                    <a href="{{ link.split('||')[0] | trim }}" target="_blank" title="{{ name }}">
-                      {% if theme.social_icons.enable %}
-                        <i class="fa fa-fw fa-{{ link.split('||')[1] | trim | default('globe') }}"></i>{#
-                    #}{% endif %}{#
-                      #}{% if not theme.social_icons.icons_only %}{#
-                        #}{{ name }}{#
-                      #}{% endif %}{#
-                  #}</a>
-                  </span>
-                {% endfor %}
+                <span style="text-algin:center">微信:1002384631</span>
+                <span style="text-algin:center">zouyepai@foxmail.com</span>
             </div>
           {% endif %}
 
