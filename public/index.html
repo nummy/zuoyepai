@@ -287,7 +287,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zuoyedaixie.com/archives/undefined.html">
+    <link itemprop="mainEntityOfPage" href="http://zuoyedaixie.com/archives/3ac3611b.html">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="作业派">
@@ -306,7 +306,167 @@
         
           <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/archives/undefined.html" itemprop="url">R代写：HWA Voting in Sweden</a></h2>
+                <a class="post-title-link" href="/archives/3ac3611b.html" itemprop="url">R代写: Univariate Statistics and Methodology using R</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-15T17:48:43+08:00">
+                2019-01-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/R代写/" itemprop="url" rel="index">
+                    <span itemprop="name">R代写</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h3><p>For the course assignment, you will be expected to retrieve, clean, and analyse a data set. In this<br>document we provide the primary research questions to be answered, information on the structure<br>and format of the final report, information on code that should be submitted, and a brief overview<br>of the marking criteria. You can find the codebook for the data set and the R script template on<br>LEARN. The data for this assignment come from the Timed picture naming in seven languages study<br>(Bates, et al., 2003) available as part of the (International Picture Naming Project)[<a href="https://crl.ucsd" target="_blank" rel="noopener">https://crl.ucsd</a>.<br>edu/experiments/ipnp/]</p>
+<h3 id="Question-1"><a href="#Question-1" class="headerlink" title="Question 1"></a>Question 1</h3><p>Is there a relationship between the frequency of a target word in the English corpus and reaction<br>time (RT) on a picture-naming task? Once you are content that the data are appropriately cleaned,<br>run the following model:</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">m1 &lt;- lm(rttar ~ lnfreq, data = df_e)</span><br></pre></td></tr></table></figure>
+<h4 id="Question-1-1"><a href="#Question-1-1" class="headerlink" title="Question 1.1"></a>Question 1.1</h4><p>Concisely report and interpret the results of the model.</p>
+<h4 id="Question-1-2"><a href="#Question-1-2" class="headerlink" title="Question 1.2"></a>Question 1.2</h4><p>What is the predicted RT for a word with a frequency of 20?</p>
+<p>Hint: Don’t forget the the frequency variable is log-transformed (see codebook for details) and that,<br>in R, exp() is the inverse function of log().</p>
+<h4 id="Question-1-3"><a href="#Question-1-3" class="headerlink" title="Question 1.3"></a>Question 1.3</h4><p>Produce and interpret a diagnostic plot of the model that shows whether or not the model residuals</p>
+<h3 id="Question-2"><a href="#Question-2" class="headerlink" title="Question 2"></a>Question 2</h3><p>Do target word length and the number of synonyms a word has have additional effects on RT above<br>and beyond that of word frequency in the English language data set?</p>
+<h4 id="Question-2-1"><a href="#Question-2-1" class="headerlink" title="Question 2.1"></a>Question 2.1</h4><p>Fit an appropriate model to test this question.</p>
+<h4 id="Question-2-2"><a href="#Question-2-2" class="headerlink" title="Question 2.2"></a>Question 2.2</h4><p>Run model diagnostics and, if needed, re-fit the model.</p>
+<h4 id="Question-2-3"><a href="#Question-2-3" class="headerlink" title="Question 2.3"></a>Question 2.3</h4><p>Report and interpret the results of the final model.</p>
+<h3 id="Question-3"><a href="#Question-3" class="headerlink" title="Question 3"></a>Question 3</h3><p>Do variables entered as predictors in the Question 2 model predict whether or not at least one par-<br>ticipant will produce an error response on a picture naming task in the English language data set?<br>Pictures for which there are any invalid or incorrect responses should be coded as containing errors.</p>
+<h4 id="Question-3-1"><a href="#Question-3-1" class="headerlink" title="Question 3.1"></a>Question 3.1</h4><p>Fit, report, and interpret an appropriate model to test this question.</p>
+<h4 id="Question-3-2"><a href="#Question-3-2" class="headerlink" title="Question 3.2"></a>Question 3.2</h4><p>What is the predicted probability of a correct response on a picture whose name has a frequency of<br>12, is 3 syllables long and has only one form?</p>
+<h3 id="Question-4"><a href="#Question-4" class="headerlink" title="Question 4"></a>Question 4</h3><p>Does the effect of target word frequency on RT vary significantly between Chinese, Hungarian, and<br>Spanish?</p>
+<p>Hint: You will need to construct a single data frame to answer this question.</p>
+<h4 id="Question-4-1"><a href="#Question-4-1" class="headerlink" title="Question 4.1"></a>Question 4.1</h4><p>Fit an appropriate model to test this question. Run model diagnostics and re-fit the model if needed.</p>
+<h4 id="Question-4-2"><a href="#Question-4-2" class="headerlink" title="Question 4.2"></a>Question 4.2</h4><p>Report and interpret the results of the final model.</p>
+<h4 id="Question-4-3"><a href="#Question-4-3" class="headerlink" title="Question 4.3"></a>Question 4.3</h4><p>Which language has the weakest effect of frequency on RT? Describe it in terms of unit change in RT<br>as a result in a unit change in log-frequency.</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zuoyedaixie.com/archives/5417a6bf.html">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="作业派">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="作业派">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/archives/5417a6bf.html" itemprop="url">R代写：HWA Voting in Sweden</a></h2>
         
 
         <div class="post-meta">
@@ -403,6 +563,125 @@
 <li>Using the probit instead of the logit, estimate the model in 2 and compare<br>the implied probabilities, how do they di¤er? Compare the two by two<br>table of observed responses versus predicted for the two models. Which of<br>the Logit and Probit would you recommend to use for this data? Discuss<br>and motivate.</li>
 </ol>
 
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zuoyedaixie.com/archives/95411762.html">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="作业派">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="作业派">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/archives/95411762.html" itemprop="url">python代写20190114</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-14T11:12:09+08:00">
+                2019-01-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
           
         
       
@@ -1542,159 +1821,13 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zuoyedaixie.com/archives/41799a9d.html">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="作业派">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="作业派">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/archives/41799a9d.html" itemprop="url">统计代写:Assignment1T42017</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-22T20:11:02+08:00">
-                2017-10-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/统计代写/" itemprop="url" rel="index">
-                    <span itemprop="name">统计代写</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="Section-A"><a href="#Section-A" class="headerlink" title="Section A"></a>Section A</h3><p>This section is to be completed using your scientific calculator for the required workings. </p>
-<ol>
-<li>Consider the data set Corporate below, containing the body corporate fees ($) for 21 downtown 2-bedroom apartments.</li>
-</ol>
-<p>a)  Specify if the variable Corporate is Quantitative or Categorical. Explain your answer.      (2) HINT: Think about the variable!</p>
-<p>b)      When data is collected for the survey. Give an example of one categorical variable that could be collected from the same sample of apartments.                      (1)</p>
-<p>c)  Make a split stemplot of the Corporate data. Make the stem $1000’s and leaf $100’s.         Remember to include a Key.  </p>
-<h3 id="Section-B"><a href="#Section-B" class="headerlink" title="Section B"></a>Section B</h3><p>This section is to be completed using R Commander for the required workings and should be typed on the computer.<br>Cowles and Davis’s Data on Volunteering<br>These data come from a study of the personality determinants of volunteering for psychological research. The variables are:<br>Neuroticism     scale from Eysenck personality inventory<br>Extraversion    scale from Eysenck personality inventory<br>Sex     a factor with levels: female; male<br>Volunteer   volunteering, a factor with levels: no; yes</p>
-<p>Load to R Commander using the following pathway: Open R and load R Cmdr.</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
           </div>
@@ -1740,7 +1873,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
