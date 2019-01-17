@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>概率论代写: stat100b_hw2_w19</title>
+      <link href="/archives/f38d342b.html"/>
+      <url>/archives/f38d342b.html</url>
+      
+        <content type="html"><![CDATA[<p>代写留学生概率论作业，probability homework, 数学作业。</p><h3 id="EXERCISE-1"><a href="#EXERCISE-1" class="headerlink" title="EXERCISE 1"></a>EXERCISE 1</h3><p>Let $X~N(\mu,\sigma)$</p><ul><li>a. Use the properties of moment generating functions to show that $aX + b \sim N(a\mu + b; a\sigma)$.</li><li>b. Use the cdf method to show that $aX + b \sim N(a\mu + b; a\sigma)$.</li></ul><h3 id="EXERCISE-2"><a href="#EXERCISE-2" class="headerlink" title="EXERCISE 2"></a>EXERCISE 2</h3><p>Answer the following questions:</p><ul><li><p>a. Let $ln(X) \sim  N(\mu, \sigma)$. Find $EX$ and $var(X)$.</p></li><li><p>b. Let $X_{1},X_{2},…,X_{n}$ be independent random variables having respectively the normal distributions $N(\mu_{i}, \sigma_{i}); i = 1,…,n$. Consider the random variable $Y = \sum_{i=1}^{n}k_{i}X_{i}$. Use moment generating functions to find the distribution of $Y$.</p></li><li><p>c. Let $X_{1},X_{2}, …, X_{n}$ be i.i.d. random variables with $X_{i} \sim  \Gamma(\alpha, \beta)$. Use the properties of moment generating functions to find the distribution of $T = X_{1} + X_{2} + …X_{n}$ and $\overline{X} = \frac{X_{1}+X_{2}+…X_{n}}{n}$.</p></li></ul><h3 id="EXERCISE-3"><a href="#EXERCISE-3" class="headerlink" title="EXERCISE 3"></a>EXERCISE 3</h3><p>Let $X \sim N(\mu; \sigma)$. Stein’s lemma states that if g is a differentiable function satisfying $Eg’(X) &lt; \infty$ then $E[g(X)(X - \mu)] = \sigma^{2}Eg’(X)$. Use Stein’s lemma to show that $EX^4 = \mu^4 +6\mu^2\sigma^2 +3\sigma^4$. Hint: Write $EX^4$<br>as $EX^3(X - \mu + \mu)$.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 概率论代写 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 概率论代写 </tag>
+            
+            <tag> Math代写 </tag>
+            
+            <tag> Probability代写 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>C++代写: Programming Project7</title>
       <link href="/archives/d88cccf6.html"/>
       <url>/archives/d88cccf6.html</url>
