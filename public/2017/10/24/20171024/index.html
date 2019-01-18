@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+  <meta name="google-site-verification" content="j0jSqZ257j5XNV4PVBNr2-3RGy0aTz9McxY3cDuUHCA">
+
+
+
+
+
+
+
+
+  <meta name="baidu-site-verification" content="alqQRnmG9u">
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Python代写,Python,算法代写,算法,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="实现tic tac toe 算法，无论怎么下，都是赢 Homework 4: Tic Tac ToeTic Tac Toe – child’s play, right?  You probably know that perfectly played games will always result in a draw.  In this assignment you will implement">
+<meta name="keywords" content="Python代写,Python,算法代写,算法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python代写: Tic Tac Toe">
+<meta property="og:url" content="http://zuoyedaixie.com/2017/10/24/20171024/index.html">
+<meta property="og:site_name" content="作业派">
+<meta property="og:description" content="实现tic tac toe 算法，无论怎么下，都是赢 Homework 4: Tic Tac ToeTic Tac Toe – child’s play, right?  You probably know that perfectly played games will always result in a draw.  In this assignment you will implement">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-01-10T09:52:55.430Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python代写: Tic Tac Toe">
+<meta name="twitter:description" content="实现tic tac toe 算法，无论怎么下，都是赢 Homework 4: Tic Tac ToeTic Tac Toe – child’s play, right?  You probably know that perfectly played games will always result in a draw.  In this assignment you will implement">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://zuoyedaixie.com/2017/10/24/20171024/">
+
+
+
+
+
+  <title>Python代写: Tic Tac Toe | 作业派</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?4d5db339674c2baba3c85b11ca38ebaf";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">作业派</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">代写留学生CS|统计|数学作业</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>
+            
+            站点地图
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zuoyedaixie.com/2017/10/24/20171024/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="作业派">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="作业派">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Python代写: Tic Tac Toe</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-24T14:22:18+08:00">
+                2017-10-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python代写/" itemprop="url" rel="index">
+                    <span itemprop="name">Python代写</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  804
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  4
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>实现tic tac toe 算法，无论怎么下，都是赢</p>
+<h1 id="Homework-4-Tic-Tac-Toe"><a href="#Homework-4-Tic-Tac-Toe" class="headerlink" title="Homework 4: Tic Tac Toe"></a>Homework 4: Tic Tac Toe</h1><p>Tic Tac Toe – child’s play, right?  You probably know that perfectly played games will always result in a draw.  In this assignment you will implement a computer’s strategy for the game.</p>
+<p>You will play against a random player – a “monkey.”  Let’s call him Harry.  Since Harry plays randomly, you will beat him most of the time.  But here’s the thing: Harry is insatiable.  He LOVES tic tac toe and will happily play 10,000 games in a row.  Since every single move is random, he might pull some things you wouldn’t expect.   You will each start about half the matches.</p>
+<p>You may work in pairs for this assignment.  So we know whom to credit, both of your names should be at the top of t3.py (replacing mine).</p>
+<p>The assignment is due Wednesday October 25th at 1:30am.  You can check it out here.</p>
+<p>Your noble adversary.</p>
+<h2 id="Your-Task"><a href="#Your-Task" class="headerlink" title="Your Task"></a>Your Task</h2><p>In this repository, you will find t3.py, human_match.py, and monkey_match.py.</p>
+<p>Running ./human_match.py starts an interactive match against the computer, while ./monkey_match.py launches 10000 games between the computer a random player (monkey).  The former will probably prove useful for debugging; the latter will serve for your grade.  After your initial check-out, computer will play randomly – just like the monkey.</p>
+<p>The classes you will maniuplate are in t3.py.  Check out the documentation by doing pydoc t3 from the command line.</p>
+<p>You will find a game class, as well as three player classes.  The former includes a board and defines the game play.  The board is defined as a list 9 elements long that initially consists of copies of None and is filled in with X’s and O’s with each move.  The indexing runs across rows and then down columns, as shown.  If you print the game, it will convert the board to string, and should be readily comprehensible.  The game also takes care of switching back and forth between the two players, eliciting moves from each, rejecting invalid moves (filled squares), and ultimately declaring a winner.  </p>
+<p>The player class is inherited by monkey, human, and computer.  Each of these players can can do two things – be initialized to play X’s or O’s, and render a move when presented with a board.</p>
+<p>You will implement the computer’s move() function.  This is part of a class (woohoo!), but all of your work should be restricted to that single function.  I suggest that you implement the Newell &amp; Simon strategy from the Wikipedia page.  Though your computer will start all its matches in the center (boring!), this is a self-consistent strategy that will never lose.  You can use other strategies if you want, but TAs will issue partial credit for the following defined steps:</p>
+<ol>
+<li>Win if possible</li>
+<li>Block your opponent from winning.</li>
+<li>Create a fork</li>
+<li>Force your opponent to play defense, if it does not result in a fork.</li>
+<li>Block your opponent from taking a fork.</li>
+<li>Take the center.</li>
+<li>Take a corner opposite your opponent.</li>
+<li>Take an empty corner.</li>
+<li>Take a side.</li>
+</ol>
+<p>A skeleton for this approach is already defined for you.  Further, game already implements check_for_wins() and check_for_twos(), which should prove useful to you in evaluating the conditions.</p>
+<p>Of these strategies, #4 may be particularly difficult.  You can see code for it below, if you get stuck.</p>
+<p><details><summary>Strategy for #4, “Force Defense”</summary><br>We’re interested in forcing your opponent to play defense, but only if it does not result in a fork for them.  The first condition just means that we create a two that they have have to block.  The second piece means that that two must not give them a fork – a sure-win.  We can do this easily, by making a copy of the game – hypo_match, below – and seeing how the game would play out, looking one move ahead.<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Get posible squares to play for a "two"</span></span><br><span class="line">self_twos = match.check_for_twos(self.mark)</span><br><span class="line">  </span><br><span class="line"><span class="comment"># We'll now consider hypothetical games, </span></span><br><span class="line"><span class="comment"># where we play in each of the "two" positions.</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> self_twos:                 <span class="comment"># For each of these</span></span><br><span class="line">    hypo_match = dc(match)          <span class="comment"># create a copy of the game -- dc is deepcopy</span></span><br><span class="line">    hypo_match.board[i] = self.mark <span class="comment"># try playing there.</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Now look for the win implied by your "two".</span></span><br><span class="line">    <span class="comment"># Your opponent would have to play here.</span></span><br><span class="line">    w = hypo_match.check_for_wins(self.mark) </span><br><span class="line">    </span><br><span class="line">    <span class="comment"># For your OPPPONENT, get any potential twos.</span></span><br><span class="line">    hypo_twos = hypo_match.check_for_twos(self.other_mark)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># If your potential win is not just a two for them,</span></span><br><span class="line">    <span class="comment"># but in fact a DOUBLE two -- a fork -- don't move here!</span></span><br><span class="line">    <span class="keyword">if</span> w <span class="keyword">in</span> hypo_twos <span class="keyword">and</span> hypo_twos[w] &gt; <span class="number">1</span>: <span class="keyword">continue</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Otherwise, it meets the condition.  Do it!!</span></span><br><span class="line">    <span class="keyword">return</span> i</span><br></pre></td></tr></table></figure></details></p>
+<p><br></p>
+<h2 id="Don’t-forget-to-commit-and-check-your-work"><a href="#Don’t-forget-to-commit-and-check-your-work" class="headerlink" title="Don’t forget to commit, and check your work!"></a>Don’t forget to commit, and check your work!</h2>
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/avatar.png" alt="作业派 wechat" style="width: 200px; max-width: 100%;">
+    <div>微信:1002384631</div>
+</div>
+
+      </div>
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python代写/" rel="tag"># Python代写</a>
+          
+            <a href="/tags/Python/" rel="tag"># Python</a>
+          
+            <a href="/tags/算法代写/" rel="tag"># 算法代写</a>
+          
+            <a href="/tags/算法/" rel="tag"># 算法</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/22/统计代写-Assignment1T42017/" rel="next" title="统计代写:Assignment1T42017">
+                <i class="fa fa-chevron-left"></i> 统计代写:Assignment1T42017
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/10/25/20171025/" rel="prev" title="统计代写: Homework1">
+                统计代写: Homework1 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/uploads/avatar.png" alt="作业派">
+            
+              <p class="site-author-name" itemprop="name">作业派</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">20</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                <span style="text-algin:center">微信:1002384631</span>
+                <span style="text-algin:center">zouyepai@foxmail.com</span>
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Homework-4-Tic-Tac-Toe"><span class="nav-number">1.</span> <span class="nav-text">Homework 4: Tic Tac Toe</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Your-Task"><span class="nav-number">1.1.</span> <span class="nav-text">Your Task</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Don’t-forget-to-commit-and-check-your-work"><span class="nav-number">1.2.</span> <span class="nav-text">Don’t forget to commit, and check your work!</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">作业派</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">5.9k</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+  
+
+
+  
+
+  
+
+</body>
+</html>
