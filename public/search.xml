@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>Python代写: Assignment 3</title>
+      <link href="/2019/01/28/Python%E4%BB%A3%E5%86%99-20190128/"/>
+      <url>/2019/01/28/Python%E4%BB%A3%E5%86%99-20190128/</url>
+      
+        <content type="html"><![CDATA[<h2 id="CSc-120-Words-ending-with"><a href="#CSc-120-Words-ending-with" class="headerlink" title="CSc 120: Words ending with"></a>CSc 120: Words ending with</h2><h3 id="Expected-Behavior"><a href="#Expected-Behavior" class="headerlink" title="Expected Behavior"></a>Expected Behavior</h3><p>Write a function words_ending_with(wordlist, tail) that behaves as follows. The argument wordlist is a list of strings, while the argument tail is a string. words_ending_with(wordlist, tail) returns a list consisting of those strings in wordlist that end with tail. If none of the strings in wordlist end with tail, it returns the empty list.<br>The order of list elements in the list returned by the function should match the order of their occurrence in wordlist.</p><h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><p>In the examples below, wordlist is the list</p><p>[‘evolve’, ‘absolve’, ‘crow’, ‘spoke’, ‘truck’, ‘lake’, ‘wow’, ‘wave’]</p><ol><li>words_ending_with(wordlist, ‘ow’)<br>Return value: [‘crow’, ‘wow’]</li><li>words_ending_with(wordlist, ‘lve’)<br>Return value: [‘evolve’, ‘absolve’]</li><li>words_ending_with(wordlist, ‘e’)<br>Return value: [‘evolve’, ‘absolve’, ‘spoke’, ‘lake’, ‘wave’]</li><li>words_ending_with(wordlist, ‘ke’)<br>Return value: [‘spoke’, ‘lake’]</li><li>words_ending_with(wordlist, ‘ing’)<br>Return value: []</li></ol><h2 id="CSc-120-Words-beginning-with"><a href="#CSc-120-Words-beginning-with" class="headerlink" title="CSc 120: Words beginning with"></a>CSc 120: Words beginning with</h2><h3 id="Expected-Behavior-1"><a href="#Expected-Behavior-1" class="headerlink" title="Expected Behavior"></a>Expected Behavior</h3><p>Write a function words_beginning_with(wordlist, head) that behaves as follows. The argument wordlist is a list of strings, while the argument head is a string. words_beginning_with(wordlist, head) returns a list consisting of those strings in wordlist that begin with head. If none of the strings in wordlist begin with head, it returns the empty list.<br>The order of list elements in the list returned by the function should match the order of their occurrence in wordlist.</p><h3 id="Examples-1"><a href="#Examples-1" class="headerlink" title="Examples"></a>Examples</h3><p>In the examples below, wordlist is the list</p><p>[‘evolve’, ‘absolve’, ‘evil’, ‘absent’, ‘evidence’, ‘lake’, ‘ladder’, ‘list’]</p><ol><li>words_beginning_with(wordlist, ‘ev’)<br>Return value: [‘evolve’, ‘evil’, ‘evidence’]</li><li>words_beginning_with(wordlist, ‘evi’)<br>Return value: [‘evil’, ‘evidence’]</li><li>words_beginning_with(wordlist, ‘e’)<br>Return value: [‘evolve’, ‘evil’, ‘evidence’]</li><li>words_beginning_with(wordlist, ‘la’)<br>Return value: [‘lake’, ‘ladder’]</li><li>words_beginning_with(wordlist, ‘ing’)<br>Return value: []</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python代写 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python代写 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>R语言代写:Chapter3</title>
+      <link href="/2019/01/27/R%E4%BB%A3%E5%86%99-20190127/"/>
+      <url>/2019/01/27/R%E4%BB%A3%E5%86%99-20190127/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Question-1"><a href="#Question-1" class="headerlink" title="Question 1"></a>Question 1</h3><p>Let X be a random variable uniformly distributed over the interval [2, 6], and let Y be a random variable distributed according to Tria( 2, 3, 7). </p><ul><li>Write the pdf and cdf of each of these random variables. </li><li>Compute their means and variances.</li></ul><h3 id="Question-2"><a href="#Question-2" class="headerlink" title="Question 2"></a>Question 2</h3><p>Suppose that X is distributed according to Unif( 10, B), for some B &gt; 10. </p><ul><li>How does the squared coefficient of variation vary as B increases? Show this behavior in a graph. </li><li>Repeat the same investigation for X distributed according to Tria( 1, 4, B), and compare the corresponding graph to the previous one. </li></ul><h3 id="Question-3"><a href="#Question-3" class="headerlink" title="Question 3"></a>Question 3</h3><p>Construct the formula for a linear congruential generator with m = 10, 000 and values of your choice for a and c. Set the last four digits of your Social Security Number as the initial seed, x0 (if the leading digit of x0 is 0, then change it to 9). Use this RNG to generate one complete period of random numbers. If the period turns out to be less than 1000, experiment with other values of a and c until you obtain an RNG with a period of at least 1000. Compute the mean, variance, and squared coefficient of variation of this sequence, as well as its histogram (use 10 cells). </p><h3 id="Question-4"><a href="#Question-4" class="headerlink" title="Question 4"></a>Question 4</h3><p>Derive a formula for generating variates from the geometric distribution of mean 4, using the Inverse Transform method, and then apply it to obtain two samples: x1 using u1 = 0.2, and x2 using u = 0.7. (Hint: Consult Section 3.7.4.) </p><h3 id="Question-5"><a href="#Question-5" class="headerlink" title="Question 5"></a>Question 5</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> R代写 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> R代写 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Java代写：CSE105 Coursework 1</title>
       <link href="/2019/01/18/Java%E4%BB%A3%E5%86%9920190118/"/>
       <url>/2019/01/18/Java%E4%BB%A3%E5%86%9920190118/</url>
@@ -124,9 +174,9 @@
       
         <tags>
             
-            <tag> 统计代写 </tag>
-            
             <tag> R代写 </tag>
+            
+            <tag> 统计代写 </tag>
             
         </tags>
       
@@ -151,9 +201,9 @@
       
         <tags>
             
-            <tag> 统计代写 </tag>
-            
             <tag> R代写 </tag>
+            
+            <tag> 统计代写 </tag>
             
         </tags>
       
@@ -178,9 +228,9 @@
       
         <tags>
             
-            <tag> R </tag>
-            
             <tag> R代写 </tag>
+            
+            <tag> R </tag>
             
         </tags>
       
@@ -218,9 +268,9 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> Java代写 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -262,7 +312,7 @@
       <link href="/2019/01/10/Python%E4%BB%A3%E5%86%9920190110onlinecourse/"/>
       <url>/2019/01/10/Python%E4%BB%A3%E5%86%9920190110onlinecourse/</url>
       
-        <content type="html"><![CDATA[<p>Python网课代修，Python入门课</p><h3 id="CSE-231"><a href="#CSE-231" class="headerlink" title="CSE 231"></a>CSE 231</h3><p>Introduction to Programming I<br>Spring Semester, 2019 </p><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>Introduction to programming using Python. Design, implementation and testing of programs to solve problems primarily in engineering, mathematics and science. Programming fundamentals, functions, classes, lists, and dictionaries.</p><h3 id="Objectives"><a href="#Objectives" class="headerlink" title="Objectives"></a>Objectives</h3><p>In this course, students will study general programming concepts, as well as a modern programming language which illustrates those concepts. Students will design, implement and test Python programs.</p><p>At the end of this course when presented with a problem we expect that a student with respond: “Hey, I can write a program to do that!”</p><h3 id="Highlights"><a href="#Highlights" class="headerlink" title="Highlights"></a>Highlights</h3><p>You are responsible for all the details in the syllabus below, but here are highlights.</p><p>Grade Points: 1000 points from weekly programming projects, exercises, and three exams.<br>Labs including pre-labs are required: your final grade will be reduced if you miss more than two.<br>If you collaborate on programming projects, you will get a zero.<br>We frequently send email from msu.edu and cse.msu.edu . It is important that you ensure that your email client isn’t routing our emails to Junk — otherwise you will miss critical email about the course.</p><h3 id="Due-Dates"><a href="#Due-Dates" class="headerlink" title="Due Dates"></a>Due Dates</h3><p>The Due Dates Page is your guide to due dates for the semester: <a href="https://www.cse.msu.edu/~cse231/due_dates.html" target="_blank" rel="noopener">https://www.cse.msu.edu/~cse231/due_dates.html</a> </p><p>To allow some flexibility:</p><ul><li>Programming Projects: late submissions are reduced 50% for up to one day late; no credit after one day.<br>Labs : Contact your TA about any extenuating circumstances before lab. Old labs cannot be made up.<br>Except for extreme circumstances (e.g. a car crash puts you overnight in a hospital) there will be no other extensions.</li><li>Due times are U.S. Eastern Standard Time. Mimir uses your computer’s time setting to display time in your browser so if your computer’s time is set to a different time zone, you will be misled by displayed due dates and times.</li></ul><h3 id="Course-Grades"><a href="#Course-Grades" class="headerlink" title="Course Grades"></a>Course Grades</h3><p>Each student’s course grade will be based on the sum of the points earned in the following categories (points are different for the Honors Section): </p><ul><li>Examinations    (45% of total course points)</li><li>Computer Projects   (45% of total course points)</li><li>Chapter Exercises   (10% of total course points)</li></ul><p>To be eligible to earn a non-zero grade in the course, a student normally must earn at least 50% of the total points for the examinations and earn at least 50% of the total points for the computer projects.</p><p>The following table gives the scale for course grades: </p><ul><li>4.0 90% of points available</li><li>3.5 85% of points available</li><li>3.0 80% of points available</li><li>2.5 75% of points available</li><li>2.0 70% of points available</li><li>1.5 65% of points available</li><li>1.0 60% of points available</li></ul><p>The instructor reserves the right to adjust the scale for course grades, if necessary. </p><p>Important: Students who get a zero (“no credit”) on more than two (2) laboratory exercises will have their course grade reduced by 0.5 for each laboratory exercise missed beyond two. For example, if a student had sufficient points to normally earn a 3.0, but zeros four (4) laboratory exercises, that student’s grade will be reduced by 2*0.5 to a 2.0 course grade.</p>]]></content>
+        <content type="html"><![CDATA[<p>Python网课代修，Python入门课</p><h3 id="CSE-231"><a href="#CSE-231" class="headerlink" title="CSE 231"></a>CSE 231</h3><p>Introduction to Programming I<br>Spring Semester, 2019 </p><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>Introduction to programming using Python. Design, implementation and testing of programs to solve problems primarily in engineering, mathematics and science. Programming fundamentals, functions, classes, lists, and dictionaries.</p><h3 id="Objectives"><a href="#Objectives" class="headerlink" title="Objectives"></a>Objectives</h3><p>In this course, students will study general programming concepts, as well as a modern programming language which illustrates those concepts. Students will design, implement and test Python programs.</p><p>At the end of this course when presented with a problem we expect that a student with respond: “Hey, I can write a program to do that!”</p><h3 id="Highlights"><a href="#Highlights" class="headerlink" title="Highlights"></a>Highlights</h3><p>You are responsible for all the details in the syllabus below, but here are highlights.</p><p>Grade Points: 1000 points from weekly programming projects, exercises, and three exams.<br>Labs including pre-labs are required: your final grade will be reduced if you miss more than two.<br>If you collaborate on programming projects, you will get a zero.<br>We frequently send email from msu.edu and cse.msu.edu . It is important that you ensure that your email client isn’t routing our emails to Junk – otherwise you will miss critical email about the course.</p><h3 id="Due-Dates"><a href="#Due-Dates" class="headerlink" title="Due Dates"></a>Due Dates</h3><p>The Due Dates Page is your guide to due dates for the semester: <a href="https://www.cse.msu.edu/~cse231/due_dates.html" target="_blank" rel="noopener">https://www.cse.msu.edu/~cse231/due_dates.html</a> </p><p>To allow some flexibility:</p><ul><li>Programming Projects: late submissions are reduced 50% for up to one day late; no credit after one day.<br>Labs : Contact your TA about any extenuating circumstances before lab. Old labs cannot be made up.<br>Except for extreme circumstances (e.g. a car crash puts you overnight in a hospital) there will be no other extensions.</li><li>Due times are U.S. Eastern Standard Time. Mimir uses your computer’s time setting to display time in your browser so if your computer’s time is set to a different time zone, you will be misled by displayed due dates and times.</li></ul><h3 id="Course-Grades"><a href="#Course-Grades" class="headerlink" title="Course Grades"></a>Course Grades</h3><p>Each student’s course grade will be based on the sum of the points earned in the following categories (points are different for the Honors Section): </p><ul><li>Examinations    (45% of total course points)</li><li>Computer Projects   (45% of total course points)</li><li>Chapter Exercises   (10% of total course points)</li></ul><p>To be eligible to earn a non-zero grade in the course, a student normally must earn at least 50% of the total points for the examinations and earn at least 50% of the total points for the computer projects.</p><p>The following table gives the scale for course grades: </p><ul><li>4.0 90% of points available</li><li>3.5 85% of points available</li><li>3.0 80% of points available</li><li>2.5 75% of points available</li><li>2.0 70% of points available</li><li>1.5 65% of points available</li><li>1.0 60% of points available</li></ul><p>The instructor reserves the right to adjust the scale for course grades, if necessary. </p><p>Important: Students who get a zero (“no credit”) on more than two (2) laboratory exercises will have their course grade reduced by 0.5 for each laboratory exercise missed beyond two. For example, if a student had sufficient points to normally earn a 3.0, but zeros four (4) laboratory exercises, that student’s grade will be reduced by 2*0.5 to a 2.0 course grade.</p>]]></content>
       
       
       <categories>
@@ -355,17 +405,17 @@
       
         <tags>
             
+            <tag> R代写 </tag>
+            
+            <tag> R </tag>
+            
             <tag> 统计代写 </tag>
+            
+            <tag> stat </tag>
             
             <tag> stat代写 </tag>
             
             <tag> 统计 </tag>
-            
-            <tag> stat </tag>
-            
-            <tag> R </tag>
-            
-            <tag> R代写 </tag>
             
         </tags>
       
@@ -378,7 +428,7 @@
       <link href="/2017/10/24/Python%E4%BB%A3%E5%86%9920171024/"/>
       <url>/2017/10/24/Python%E4%BB%A3%E5%86%9920171024/</url>
       
-        <content type="html"><![CDATA[<p>实现tic tac toe 算法，无论怎么下，都是赢</p><h1 id="Homework-4-Tic-Tac-Toe"><a href="#Homework-4-Tic-Tac-Toe" class="headerlink" title="Homework 4: Tic Tac Toe"></a>Homework 4: Tic Tac Toe</h1><p>Tic Tac Toe — child’s play, right?  You probably know that perfectly played games will always result in a draw.  In this assignment you will implement a computer’s strategy for the game.</p><p>You will play against a random player — a “monkey.”  Let’s call him Harry.  Since Harry plays randomly, you will beat him most of the time.  But here’s the thing: Harry is insatiable.  He LOVES tic tac toe and will happily play 10,000 games in a row.  Since every single move is random, he might pull some things you wouldn’t expect.   You will each start about half the matches.</p><p>You may work in pairs for this assignment.  So we know whom to credit, both of your names should be at the top of t3.py (replacing mine).</p><p>The assignment is due Wednesday October 25th at 1:30am.  You can check it out here.</p><p>Your noble adversary.</p><h2 id="Your-Task"><a href="#Your-Task" class="headerlink" title="Your Task"></a>Your Task</h2><p>In this repository, you will find t3.py, human_match.py, and monkey_match.py.</p><p>Running ./human_match.py starts an interactive match against the computer, while ./monkey_match.py launches 10000 games between the computer a random player (monkey).  The former will probably prove useful for debugging; the latter will serve for your grade.  After your initial check-out, computer will play randomly — just like the monkey.</p><p>The classes you will maniuplate are in t3.py.  Check out the documentation by doing pydoc t3 from the command line.</p><p>You will find a game class, as well as three player classes.  The former includes a board and defines the game play.  The board is defined as a list 9 elements long that initially consists of copies of None and is filled in with X’s and O’s with each move.  The indexing runs across rows and then down columns, as shown.  If you print the game, it will convert the board to string, and should be readily comprehensible.  The game also takes care of switching back and forth between the two players, eliciting moves from each, rejecting invalid moves (filled squares), and ultimately declaring a winner.  </p><p>The player class is inherited by monkey, human, and computer.  Each of these players can can do two things — be initialized to play X’s or O’s, and render a move when presented with a board.</p><p>You will implement the computer’s move() function.  This is part of a class (woohoo!), but all of your work should be restricted to that single function.  I suggest that you implement the Newell &amp; Simon strategy from the Wikipedia page.  Though your computer will start all its matches in the center (boring!), this is a self-consistent strategy that will never lose.  You can use other strategies if you want, but TAs will issue partial credit for the following defined steps:</p><ol><li>Win if possible</li><li>Block your opponent from winning.</li><li>Create a fork</li><li>Force your opponent to play defense, if it does not result in a fork.</li><li>Block your opponent from taking a fork.</li><li>Take the center.</li><li>Take a corner opposite your opponent.</li><li>Take an empty corner.</li><li>Take a side.</li></ol><p>A skeleton for this approach is already defined for you.  Further, game already implements check_for_wins() and check_for_twos(), which should prove useful to you in evaluating the conditions.</p><p>Of these strategies, #4 may be particularly difficult.  You can see code for it below, if you get stuck.</p><p><details><summary>Strategy for #4, "Force Defense"</summary><br>We’re interested in forcing your opponent to play defense, but only if it does not result in a fork for them.  The first condition just means that we create a two that they have have to block.  The second piece means that that two must not give them a fork — a sure-win.  We can do this easily, by making a copy of the game — hypo_match, below — and seeing how the game would play out, looking one move ahead.<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Get posible squares to play for a "two"</span></span><br><span class="line">self_twos = match.check_for_twos(self.mark)</span><br><span class="line">  </span><br><span class="line"><span class="comment"># We'll now consider hypothetical games, </span></span><br><span class="line"><span class="comment"># where we play in each of the "two" positions.</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> self_twos:                 <span class="comment"># For each of these</span></span><br><span class="line">    hypo_match = dc(match)          <span class="comment"># create a copy of the game -- dc is deepcopy</span></span><br><span class="line">    hypo_match.board[i] = self.mark <span class="comment"># try playing there.</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Now look for the win implied by your "two".</span></span><br><span class="line">    <span class="comment"># Your opponent would have to play here.</span></span><br><span class="line">    w = hypo_match.check_for_wins(self.mark) </span><br><span class="line">    </span><br><span class="line">    <span class="comment"># For your OPPPONENT, get any potential twos.</span></span><br><span class="line">    hypo_twos = hypo_match.check_for_twos(self.other_mark)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># If your potential win is not just a two for them,</span></span><br><span class="line">    <span class="comment"># but in fact a DOUBLE two -- a fork -- don't move here!</span></span><br><span class="line">    <span class="keyword">if</span> w <span class="keyword">in</span> hypo_twos <span class="keyword">and</span> hypo_twos[w] &gt; <span class="number">1</span>: <span class="keyword">continue</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Otherwise, it meets the condition.  Do it!!</span></span><br><span class="line">    <span class="keyword">return</span> i</span><br></pre></td></tr></table></figure></details></p><p>&lt;/details&gt;&lt;/br&gt;</p><h2 id="Don’t-forget-to-commit-and-check-your-work"><a href="#Don’t-forget-to-commit-and-check-your-work" class="headerlink" title="Don’t forget to commit, and check your work!"></a>Don’t forget to commit, and check your work!</h2>]]></content>
+        <content type="html"><![CDATA[<p>实现tic tac toe 算法，无论怎么下，都是赢</p><h1 id="Homework-4-Tic-Tac-Toe"><a href="#Homework-4-Tic-Tac-Toe" class="headerlink" title="Homework 4: Tic Tac Toe"></a>Homework 4: Tic Tac Toe</h1><p>Tic Tac Toe – child’s play, right?  You probably know that perfectly played games will always result in a draw.  In this assignment you will implement a computer’s strategy for the game.</p><p>You will play against a random player – a “monkey.”  Let’s call him Harry.  Since Harry plays randomly, you will beat him most of the time.  But here’s the thing: Harry is insatiable.  He LOVES tic tac toe and will happily play 10,000 games in a row.  Since every single move is random, he might pull some things you wouldn’t expect.   You will each start about half the matches.</p><p>You may work in pairs for this assignment.  So we know whom to credit, both of your names should be at the top of t3.py (replacing mine).</p><p>The assignment is due Wednesday October 25th at 1:30am.  You can check it out here.</p><p>Your noble adversary.</p><h2 id="Your-Task"><a href="#Your-Task" class="headerlink" title="Your Task"></a>Your Task</h2><p>In this repository, you will find t3.py, human_match.py, and monkey_match.py.</p><p>Running ./human_match.py starts an interactive match against the computer, while ./monkey_match.py launches 10000 games between the computer a random player (monkey).  The former will probably prove useful for debugging; the latter will serve for your grade.  After your initial check-out, computer will play randomly – just like the monkey.</p><p>The classes you will maniuplate are in t3.py.  Check out the documentation by doing pydoc t3 from the command line.</p><p>You will find a game class, as well as three player classes.  The former includes a board and defines the game play.  The board is defined as a list 9 elements long that initially consists of copies of None and is filled in with X’s and O’s with each move.  The indexing runs across rows and then down columns, as shown.  If you print the game, it will convert the board to string, and should be readily comprehensible.  The game also takes care of switching back and forth between the two players, eliciting moves from each, rejecting invalid moves (filled squares), and ultimately declaring a winner.  </p><p>The player class is inherited by monkey, human, and computer.  Each of these players can can do two things – be initialized to play X’s or O’s, and render a move when presented with a board.</p><p>You will implement the computer’s move() function.  This is part of a class (woohoo!), but all of your work should be restricted to that single function.  I suggest that you implement the Newell &amp; Simon strategy from the Wikipedia page.  Though your computer will start all its matches in the center (boring!), this is a self-consistent strategy that will never lose.  You can use other strategies if you want, but TAs will issue partial credit for the following defined steps:</p><ol><li>Win if possible</li><li>Block your opponent from winning.</li><li>Create a fork</li><li>Force your opponent to play defense, if it does not result in a fork.</li><li>Block your opponent from taking a fork.</li><li>Take the center.</li><li>Take a corner opposite your opponent.</li><li>Take an empty corner.</li><li>Take a side.</li></ol><p>A skeleton for this approach is already defined for you.  Further, game already implements check_for_wins() and check_for_twos(), which should prove useful to you in evaluating the conditions.</p><p>Of these strategies, #4 may be particularly difficult.  You can see code for it below, if you get stuck.</p><p><details><summary>Strategy for #4, “Force Defense”</summary><br>We’re interested in forcing your opponent to play defense, but only if it does not result in a fork for them.  The first condition just means that we create a two that they have have to block.  The second piece means that that two must not give them a fork – a sure-win.  We can do this easily, by making a copy of the game – hypo_match, below – and seeing how the game would play out, looking one move ahead.<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Get posible squares to play for a "two"</span></span><br><span class="line">self_twos = match.check_for_twos(self.mark)</span><br><span class="line">  </span><br><span class="line"><span class="comment"># We'll now consider hypothetical games, </span></span><br><span class="line"><span class="comment"># where we play in each of the "two" positions.</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> self_twos:                 <span class="comment"># For each of these</span></span><br><span class="line">    hypo_match = dc(match)          <span class="comment"># create a copy of the game -- dc is deepcopy</span></span><br><span class="line">    hypo_match.board[i] = self.mark <span class="comment"># try playing there.</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Now look for the win implied by your "two".</span></span><br><span class="line">    <span class="comment"># Your opponent would have to play here.</span></span><br><span class="line">    w = hypo_match.check_for_wins(self.mark) </span><br><span class="line">    </span><br><span class="line">    <span class="comment"># For your OPPPONENT, get any potential twos.</span></span><br><span class="line">    hypo_twos = hypo_match.check_for_twos(self.other_mark)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># If your potential win is not just a two for them,</span></span><br><span class="line">    <span class="comment"># but in fact a DOUBLE two -- a fork -- don't move here!</span></span><br><span class="line">    <span class="keyword">if</span> w <span class="keyword">in</span> hypo_twos <span class="keyword">and</span> hypo_twos[w] &gt; <span class="number">1</span>: <span class="keyword">continue</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Otherwise, it meets the condition.  Do it!!</span></span><br><span class="line">    <span class="keyword">return</span> i</span><br></pre></td></tr></table></figure></details></p><p><br></p><h2 id="Don’t-forget-to-commit-and-check-your-work"><a href="#Don’t-forget-to-commit-and-check-your-work" class="headerlink" title="Don’t forget to commit, and check your work!"></a>Don’t forget to commit, and check your work!</h2>]]></content>
       
       
       <categories>
@@ -423,11 +473,11 @@
             
             <tag> 统计代写 </tag>
             
+            <tag> stat </tag>
+            
             <tag> stat代写 </tag>
             
             <tag> 统计 </tag>
-            
-            <tag> stat </tag>
             
         </tags>
       
