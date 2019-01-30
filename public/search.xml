@@ -54,6 +54,33 @@
     
     
     <entry>
+      <title>R语言代写: TicTacToe</title>
+      <link href="/2019/01/26/R%E4%BB%A3%E5%86%9920190126/"/>
+      <url>/2019/01/26/R%E4%BB%A3%E5%86%9920190126/</url>
+      
+        <content type="html"><![CDATA[<p>使用R编写小游戏TicTacToe，专业代写R语言作业，Assignment，Project，保证原创。</p><p>Please do your best to complete this assignment on your own, and resist the temptation to look at someone else’s solution, or to copy someone else’s work.</p><p>Students who are found to be in violation of the policies regarding academic integrity will be reported to the dean of students.</p><p>You will get out of this class what you put in. You will only get better at coding if you challenge yourself. This assignment is intended to be challenging, but not insurmountable. Your code need not be very complicated. You will NOT be graded on coding efficiency, but so you have an idea, my implementation is 145 lines of code.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br></pre></td><td class="code"><pre><span class="line"># These are some recommendations for tic-tac-toe:</span><br><span class="line"># You are welcome to implement the game another way.</span><br><span class="line"># You will be graded on whether your game works or not. Point details are in the HW assignment instructions.</span><br><span class="line"></span><br><span class="line"># First, there are 8 ways to win. I have stored them as a list called triples.</span><br><span class="line"></span><br><span class="line">triples &lt;- list(</span><br><span class="line">  c(1,2,3),</span><br><span class="line">  c(4,5,6),</span><br><span class="line">  c(7,8,9),</span><br><span class="line">  c(1,4,7),</span><br><span class="line">  c(2,5,8),</span><br><span class="line">  c(3,6,9),</span><br><span class="line">  c(1,5,9),</span><br><span class="line">  c(3,5,7)</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># The `state` of the game can be stored as a character vector of length 9. </span><br><span class="line"># I used NA for spots that were unplayed, and entered &quot;x&quot; and &quot;o&quot; as the game progressed.</span><br><span class="line"># For example, when I start the game, I made a vector called state with 9 NAs</span><br><span class="line"># state</span><br><span class="line"># [1] NA  NA  NA  NA  NA  NA  NA  NA  NA </span><br><span class="line"># Let&apos;s say &apos;x&apos; plays in the middle spot (position 5)</span><br><span class="line"># the state becomes:</span><br><span class="line"># [1] NA  NA  NA  NA  &quot;x&quot; NA  NA  NA  NA </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># When I created the game, I created the following functions:</span><br><span class="line"></span><br><span class="line"># display(state)  </span><br><span class="line"># displays the current state of the board.</span><br><span class="line"></span><br><span class="line"># prompt_user(who, state)</span><br><span class="line"># prompts the user for where they want to play.</span><br><span class="line"># checks to see if the move is legal or not</span><br><span class="line"></span><br><span class="line"># update(state, who, pos)  </span><br><span class="line"># updates the state of the board by putting an x or o (who) </span><br><span class="line"># in the designated position (pos) </span><br><span class="line"></span><br><span class="line"># computer_turn(state)  </span><br><span class="line"># has the computer take a turn. The input is the state.</span><br><span class="line"># The function returns the position where the computer will play.</span><br><span class="line"></span><br><span class="line"># check_winner(state)   </span><br><span class="line"># checks if there is a winner.</span><br><span class="line"></span><br><span class="line"># play() # the &apos;wrapping&apos; function that lets you play a game by combining the above functions.</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># The display(state) function presents the board as a 3x3 grid with numbers in the positions as follows.</span><br><span class="line"># I used cat() with the state vector to create the board</span><br><span class="line">#  x | 2 | 3  </span><br><span class="line"># ---+---+---</span><br><span class="line">#  4 | o | 6  </span><br><span class="line"># ---+---+---</span><br><span class="line">#  7 | 8 | 9</span><br><span class="line"></span><br><span class="line"># As the game progresses, the display function should output the current state of the game board. For example:</span><br><span class="line">  </span><br><span class="line"># The function `update(state, who, pos)` takes the current state of the game and puts in an &apos;x&apos; or &apos;o&apos; in the designated position. </span><br><span class="line"># This function should be very simple to implement.</span><br><span class="line"></span><br><span class="line"># The `computer_turn` function reads the current board and returns where it will play next. </span><br><span class="line"># The `computer_turn` is able to deduce whether the computer is playing as x or as o.</span><br><span class="line"># The function also implements some basic strategy (wins and blocks).</span><br><span class="line"></span><br><span class="line"># The `play` function puts everything together.</span><br><span class="line"></span><br><span class="line"># The function first asks if there is one or two human players. </span><br><span class="line"># If there is one human player, it asks if the human will play first or second.</span><br><span class="line"></span><br><span class="line"># I&apos;ve outlined in psuedo-code how I imagine you can set up the play function:</span><br><span class="line"></span><br><span class="line"># </span><br><span class="line"># play &lt;- function()&#123;</span><br><span class="line"># # determine game conditons: 1 or 2 players. If computer plays, is it player 1 or 2.</span><br><span class="line"># # initialize game board</span><br><span class="line"></span><br><span class="line"># # while( no winner )&#123;</span><br><span class="line"># # x&apos;s turn</span><br><span class="line"># display() # display board </span><br><span class="line"># # x chooses where to play. prompt_user() or computer_turn()</span><br><span class="line"># update() # update board</span><br><span class="line"># check_winner() # if x wins - quit loop</span><br><span class="line"># # o&apos;s turn</span><br><span class="line"># display() # display board </span><br><span class="line"># # o chooses where to play. prompt_user() or computer_turn()</span><br><span class="line"># update() # update board</span><br><span class="line"># check_winner() # if o wins - quit loop</span><br><span class="line"># &#125;</span><br><span class="line"># # display final board state and who the winner is</span><br><span class="line"># &#125;</span><br><span class="line"></span><br><span class="line"># These are recommendations that I make for programming the game. </span><br><span class="line"># You are welcome to implement the game another way.</span><br><span class="line"># You will be graded on whether your game works or not. Point details are in the HW assignment instructions.</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> R代写 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> R代写 </tag>
+            
+            <tag> R语言代写 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Java代写：CSE105 Coursework 1</title>
       <link href="/2019/01/18/Java%E4%BB%A3%E5%86%9920190118/"/>
       <url>/2019/01/18/Java%E4%BB%A3%E5%86%9920190118/</url>
@@ -407,15 +434,15 @@
             
             <tag> R代写 </tag>
             
-            <tag> R </tag>
-            
             <tag> 统计代写 </tag>
-            
-            <tag> stat </tag>
             
             <tag> stat代写 </tag>
             
             <tag> 统计 </tag>
+            
+            <tag> stat </tag>
+            
+            <tag> R </tag>
             
         </tags>
       
@@ -473,11 +500,11 @@
             
             <tag> 统计代写 </tag>
             
-            <tag> stat </tag>
-            
             <tag> stat代写 </tag>
             
             <tag> 统计 </tag>
+            
+            <tag> stat </tag>
             
         </tags>
       
