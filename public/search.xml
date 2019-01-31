@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Python代写:数据划分算法</title>
+      <link href="/2019/01/30/Python%E4%BB%A3%E5%86%9920190130/"/>
+      <url>/2019/01/30/Python%E4%BB%A3%E5%86%9920190130/</url>
+      
+        <content type="html"><![CDATA[<p>When developing a machine learning model from a cleaned dataset, you first need to split the data into three sets: The training set, the validation set, and the testing set. How you split the data is a very important issue.</p><p>For this project you will be using a stratification method to decide how to split the data. In the dataset, you will have several categorical variables (variables whose value takes on one of a discrete set of categories). Some of these variables are particularly important to our model and we would like to be sure that we preserve the proportions of these variables’ categories from the original dataset within each of our new datasets. </p><p>For example, say you have an important categorical variable named var1 which can take values in the set {A, B, C, D}. Further suppose that within the original dataset, 40% of rows have value A for var1, 25% have value B, 20% have value C, and 15% have value D. Your code should split the data such that for the training set, 40% of rows have value A for var1, 25% have value B, 20% have value C, and 15% have value D. The same should be true for the testing and validation sets. </p><p>We may want to preserve the proportions of many variables, so your code should be scalable. The proportions do not have to be exactly the same in all the sets, as long as it is as close as possible. The training, validation, and testing sets should be disjoint and cover all rows in the original dataset. You should have the training data make up 70% of the original dataset, and the validation and testing sets should each make up 15% of the original dataset. Each dataset you create should be saved to its own .csv file. </p><p>I have provided a sample dataset for you to run your code on. I will be testing your code on this dataset and on other datasets of similar format that you will not have access to. All datasets will be in csv format. The dataset may contain mixed categorical and numeric variables. As input, your program should take the names of the specific variables we want to preserve. We will only ever ask you to preserve the proportions of a categorical variable. Remember, we may ask you to preserve the proportions of multiple variables. As output, you should save the generated files in a csv format. </p><p>Along with the submission of your code, please also include a README file. In the readme you must give instructions on how to run your code including all inputs the code requires. You must also explain what output the code will provide. In addition, please briefly describe the algorithm you implemented. Also provide the runtime complexity of your algorithm using big O notation. </p><p>Please write your code using python. If you think another language would be better suited to this task, use python anyway, but also explain in your README which other language you would have chosen and why you would have preferred it. Please do not submit your code as a Jupyter notebook. </p><p>You may use any and all resources at your disposal, however you may not have another person write any of the code for you. If you have taken any code from a website, please include the link to this website in your README, and in a comment where the code is implemented. </p><p>Code is expected to be efficient, concise, and scalable. </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python代写 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python代写 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Python代写: Assignment 3</title>
       <link href="/2019/01/28/Python%E4%BB%A3%E5%86%99-20190128/"/>
       <url>/2019/01/28/Python%E4%BB%A3%E5%86%99-20190128/</url>
@@ -295,9 +320,9 @@
       
         <tags>
             
-            <tag> Java代写 </tag>
-            
             <tag> Java </tag>
+            
+            <tag> Java代写 </tag>
             
         </tags>
       
@@ -434,6 +459,8 @@
             
             <tag> R代写 </tag>
             
+            <tag> R </tag>
+            
             <tag> 统计代写 </tag>
             
             <tag> stat代写 </tag>
@@ -441,8 +468,6 @@
             <tag> 统计 </tag>
             
             <tag> stat </tag>
-            
-            <tag> R </tag>
             
         </tags>
       
