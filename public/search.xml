@@ -31,6 +31,33 @@
     
     
     <entry>
+      <title>R语言代写: Homework1</title>
+      <link href="/2019/02/11/R%E8%AF%AD%E8%A8%80%E4%BB%A3%E5%86%9920190211/"/>
+      <url>/2019/02/11/R%E8%AF%AD%E8%A8%80%E4%BB%A3%E5%86%9920190211/</url>
+      
+        <content type="html"><![CDATA[<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">install.packages(<span class="string">"rootSolve"</span>)</span><br><span class="line"><span class="keyword">library</span>(<span class="string">"rootSolve"</span>)</span><br><span class="line">set.seed(<span class="number">2301</span>)</span><br></pre></td></tr></table></figure><h3 id="Question-1-–-Set-Operation"><a href="#Question-1-–-Set-Operation" class="headerlink" title="Question 1 – Set Operation"></a>Question 1 – Set Operation</h3><p>Suppose we have “Rominos” Pizza in Hartford and Storrs</p><ul><li>i. Define a vector to indicate 50000 individuals living in Connecticut, Hint: choose a sequence of integers starting from 1 to 50000, Each number is the index of one individual </li><li>ii. Define a set for those individuals who visit the Rominos at Hartford, Sampling 2000 out of 50000 individuals</li><li>iii. Define a set for those individuals who visit the Rominos at Storrs, Sampling 2000 out of 50000 individuals </li><li>iv. Find those individuals who visit Rominos at both Hartford and Storrs stores </li><li>v. Sort the order of elements in ind_both </li><li>vi. Save s_ind_both (the sorted ind_both) as a txt file; name it “travel_individuals.txt”, hint : write(qd, “qd.txt”); it means “ save the variable qd in a txt file “qd.txt”  </li><li>vii. How many individuals visiting Rominos at both Hartford and Storrs stores   </li><li>viii. Explain why those individuals visit both Hartford and Storrs. Any reasonable answers would be fine. Answer: They are intersection of two sets.</li></ul><h3 id="Question-2-Utility-Puzzle"><a href="#Question-2-Utility-Puzzle" class="headerlink" title="Question 2 Utility Puzzle"></a>Question 2 Utility Puzzle</h3><p>We all know that eating food will give us payoffs when we are hungry.But the utility function will not keep going up after we feel full. Suppose the utility function of units of food for an individual is given as bellow<br><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">U(x)= -x^<span class="number">2</span> + <span class="number">8</span>*x</span><br><span class="line">x &gt;= <span class="number">0</span></span><br></pre></td></tr></table></figure></p><ul><li>i. Define the utility function using function(x){} method </li><li>ii. Plot the U(x) in the domain of [0, 10]</li><li>iii.Add the line of U(x)=0, Suppose the maximum utility is 16, Find the corresponding x (units of food) which will give us a utility of 16.</li><li>iv. Define the new equation you will solve in function formula, Hint: use <code>U(x)=-x^2 + 8*x =16</code> to rewrite an equation which equals to 0.</li><li>v. Solve the new equation </li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> R代写 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> R代写 </tag>
+            
+            <tag> R语言代写 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Python代写:数据划分算法</title>
       <link href="/2019/01/30/Python%E4%BB%A3%E5%86%9920190130/"/>
       <url>/2019/01/30/Python%E4%BB%A3%E5%86%9920190130/</url>
@@ -374,9 +401,9 @@
       
         <tags>
             
-            <tag> Java代写 </tag>
-            
             <tag> Java </tag>
+            
+            <tag> Java代写 </tag>
             
         </tags>
       
@@ -517,11 +544,11 @@
             
             <tag> 统计代写 </tag>
             
+            <tag> stat </tag>
+            
             <tag> stat代写 </tag>
             
             <tag> 统计 </tag>
-            
-            <tag> stat </tag>
             
         </tags>
       
@@ -579,11 +606,11 @@
             
             <tag> 统计代写 </tag>
             
+            <tag> stat </tag>
+            
             <tag> stat代写 </tag>
             
             <tag> 统计 </tag>
-            
-            <tag> stat </tag>
             
         </tags>
       
